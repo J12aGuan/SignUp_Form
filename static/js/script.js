@@ -99,7 +99,6 @@ function passData(){
   document.getElementById("list").innerHTML = "";
 
   if(new_page == false){
-    console.log("hi");
     window.open("https://docs.google.com/spreadsheets/d/1BWoxXRK9Fk1leIw-J07AIp6nj2EnPEDkqhPUtRCJ7IE/edit?usp=sharing", "_blank");
     new_page = true;
   };
