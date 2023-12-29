@@ -23,7 +23,6 @@ function schedule(index, Event_Dates, Event_Times, Spot_Total, Spot_Available, R
     table.classList.toggle("table_title_display");
   }
   var rowCount = table.rows.length;  
-  console.log(rowCount);
   var row = table.insertRow(rowCount);  
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
@@ -52,7 +51,6 @@ function unSchedule(index, Event_Dates, Event_Times, Spot_Total, Spot_Available,
   }
 
   var rowCount = table.rows.length;  
-  console.log(rowCount);
   var row = table.insertRow(rowCount);  
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
@@ -101,8 +99,9 @@ function passData(){
   document.getElementById("list").innerHTML = "";
 
   if(new_page == false){
+    console.log("hi");
     window.open("https://docs.google.com/spreadsheets/d/1BWoxXRK9Fk1leIw-J07AIp6nj2EnPEDkqhPUtRCJ7IE/edit?usp=sharing", "_blank");
-    new_page = true
+    new_page = true;
   };
   
 };
